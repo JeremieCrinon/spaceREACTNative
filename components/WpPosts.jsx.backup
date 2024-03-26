@@ -1,0 +1,36 @@
+import React, { useState, useEffect, Component } from 'react';
+import {Text, View, Image} from 'react-native';
+import axios from 'axios';
+import { WebView } from 'react-native-webview';
+
+class WpPosts extends Component {
+    
+    render() {
+
+    // const [data, setData] = useState(null);
+
+    // useEffect(() => {
+    //     axios.get('https://jeremie.subotai.fr/wp-json/wp/v2/posts')
+    //       .then(response => {
+    //         setData(response.data);
+    //       })
+    //       .catch(error => {
+    //         console.error('Erreur lors de la récupération des données:', error);
+    //       });
+    //   }, []);
+
+      return (
+        <View>
+            <Text>Hello World!</Text>
+            <WebView
+            style={{ width: 600, height: 600  }}
+            originWhitelist={['*']}
+            source={{ html: '<h1>Hello world</h1>' }}
+            />
+        </View>
+        
+      );
+    }
+  }
+
+export default WpPosts;
