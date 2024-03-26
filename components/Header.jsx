@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollView, Text, View, Image, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const screenHeight = Dimensions.get('window').height;
 
 function Header (){
-
+    const navigation = useNavigation();
     const [isViewVisible, setIsViewVisible] = useState(false);
 
     const toggleView = () => {
@@ -28,10 +29,26 @@ function Header (){
             {isViewVisible && (
                 <View style={styles.burger_inside}>
                     <View style={styles.burger_inside_nav}>
-                        <Text style={styles.burger_inside_link}><Text style={styles.burger_inside_link_bold}>00</Text> Accueil</Text>
-                        <Text style={styles.burger_inside_link}><Text style={styles.burger_inside_link_bold}>01</Text> Destination</Text>
-                        <Text style={styles.burger_inside_link}><Text style={styles.burger_inside_link_bold}>02</Text> Equipage</Text>
-                        <Text style={styles.burger_inside_link}><Text style={styles.burger_inside_link_bold}>03</Text> Technologie</Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                            <Text style={styles.burger_inside_link}>
+                                <Text style={styles.burger_inside_link_bold}>00</Text> Accueil
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Destination')}>
+                            <Text style={styles.burger_inside_link}>
+                                <Text style={styles.burger_inside_link_bold}>01</Text> Destination
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Crew')}>
+                            <Text style={styles.burger_inside_link}>
+                                <Text style={styles.burger_inside_link_bold}>02</Text> Equipage
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Tech')}>
+                            <Text style={styles.burger_inside_link}>
+                                <Text style={styles.burger_inside_link_bold}>03</Text> Technologie
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             )}
