@@ -15,7 +15,9 @@
 		5DE8658FE3E547F19B156E3B /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC611BFEE5B84825A36A0B71 /* BarlowCondensed-Regular.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-SpaceReactNative-SpaceReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SpaceReactNative-SpaceReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AFE1D25645E446F7AAEE4208 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33CD9E60FF6D4724A8317ED7 /* Barlow-Regular.ttf */; };
 		CBCF57AEB61542C0B23B0651 /* BarlowCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E45C9486F4C24FD0A96A0FC7 /* BarlowCondensed-Bold.ttf */; };
+		F546D1A9B37C4E71961BAFC3 /* Bellefair-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9C9F4B1B7FE46928B607295 /* Bellefair-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +41,14 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SpaceReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SpaceReactNative/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-SpaceReactNative-SpaceReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpaceReactNative-SpaceReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CD9E60FF6D4724A8317ED7 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Regular.ttf"; path = "../assets/fonts/Barlow-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-SpaceReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceReactNative.debug.xcconfig"; path = "Target Support Files/Pods-SpaceReactNative/Pods-SpaceReactNative.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-SpaceReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceReactNative.release.xcconfig"; path = "Target Support Files/Pods-SpaceReactNative/Pods-SpaceReactNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-SpaceReactNative-SpaceReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceReactNative-SpaceReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceReactNative-SpaceReactNativeTests/Pods-SpaceReactNative-SpaceReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SpaceReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpaceReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SpaceReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-SpaceReactNative-SpaceReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceReactNative-SpaceReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceReactNative-SpaceReactNativeTests/Pods-SpaceReactNative-SpaceReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9C9F4B1B7FE46928B607295 /* Bellefair-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Bellefair-Regular.ttf"; path = "../assets/fonts/Bellefair-Regular.ttf"; sourceTree = "<group>"; };
 		DC611BFEE5B84825A36A0B71 /* BarlowCondensed-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BarlowCondensed-Regular.ttf"; path = "../assets/fonts/BarlowCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		E45C9486F4C24FD0A96A0FC7 /* BarlowCondensed-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BarlowCondensed-Bold.ttf"; path = "../assets/fonts/BarlowCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -147,6 +151,8 @@
 			children = (
 				E45C9486F4C24FD0A96A0FC7 /* BarlowCondensed-Bold.ttf */,
 				DC611BFEE5B84825A36A0B71 /* BarlowCondensed-Regular.ttf */,
+				C9C9F4B1B7FE46928B607295 /* Bellefair-Regular.ttf */,
+				33CD9E60FF6D4724A8317ED7 /* Barlow-Regular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -260,6 +266,8 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CBCF57AEB61542C0B23B0651 /* BarlowCondensed-Bold.ttf in Resources */,
 				5DE8658FE3E547F19B156E3B /* BarlowCondensed-Regular.ttf in Resources */,
+				F546D1A9B37C4E71961BAFC3 /* Bellefair-Regular.ttf in Resources */,
+				AFE1D25645E446F7AAEE4208 /* Barlow-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

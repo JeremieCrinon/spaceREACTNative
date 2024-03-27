@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollView, Text, View, Image, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { BlurView } from '@react-native-community/blur';
 
 const screenHeight = Dimensions.get('window').height;
 
@@ -27,30 +28,30 @@ function Header (){
                 </TouchableOpacity>
             </View>
             {isViewVisible && (
-                <View style={styles.burger_inside}>
+                <BlurView style={styles.burger_inside} blurType="light" blurAmount={3} blurRadius={15}>
                     <View style={styles.burger_inside_nav}>
-                        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                        <TouchableOpacity onPress={() => {navigation.navigate('Home'), toggleView()}}>
                             <Text style={styles.burger_inside_link}>
                                 <Text style={styles.burger_inside_link_bold}>00</Text> Accueil
                             </Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('Destination')}>
+                        <TouchableOpacity onPress={() => {navigation.navigate('Destination'), toggleView()}}>
                             <Text style={styles.burger_inside_link}>
                                 <Text style={styles.burger_inside_link_bold}>01</Text> Destination
                             </Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('Crew')}>
+                        <TouchableOpacity onPress={() => {navigation.navigate('Crew'), toggleView()}}>
                             <Text style={styles.burger_inside_link}>
                                 <Text style={styles.burger_inside_link_bold}>02</Text> Equipage
                             </Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('Tech')}>
+                        <TouchableOpacity onPress={() => {navigation.navigate('Tech'), toggleView()}}>
                             <Text style={styles.burger_inside_link}>
                                 <Text style={styles.burger_inside_link_bold}>03</Text> Technologie
                             </Text>
                         </TouchableOpacity>
                     </View>
-                </View>
+                </BlurView>
             )}
             
         </>
@@ -77,7 +78,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'stretch',
         position: 'relative',
-        backgroundColor: 'green',
     },
     burger_line: {
         backgroundColor: 'white',
@@ -89,7 +89,6 @@ const styles = StyleSheet.create({
     },
 
     burger_inside: {
-        backgroundColor: 'red',
         position: 'absolute',
         zIndex: 1000,
         width: '67.73%',
@@ -101,7 +100,6 @@ const styles = StyleSheet.create({
         marginTop: 100,
         marginLeft: '9.86%',
         height: 150,
-        backgroundColor: 'blue',
         flexDirection: 'column',
         justifyContent: 'space-between',
     },

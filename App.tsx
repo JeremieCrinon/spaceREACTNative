@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -15,15 +15,27 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import WpPosts from './components/WpPosts';
+
 import Header from './components/Header';
 
 import Home from './pages/Home';
 import Destination from './pages/Destination';
 
+
+// Pour forcer l'orientation de l'app en portait
+import Orientation from 'react-native-orientation-locker';
+
+
+// /Pour forcer l'orientation de l'app en portait
+
 const Stack = createStackNavigator();
 
 function App(){
+
+  useEffect(() => {
+    Orientation.lockToPortrait();
+  }, []);
+
   return (
     <NavigationContainer>
         <Header />
